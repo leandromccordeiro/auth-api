@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Implementação e Formato de Respostas
+
+## Processo de Implementação
+- Dividir implementações complexas em etapas incrementais
+- Fornecer estratégia de testes para cada solução
+- Mostrar apenas partes relevantes em alterações
+- Considerar diferentes ambientes (dev, test, prod)
+
+## Formato de Respostas
+- Fornecer visão geral do problema e solução
+- Explicar detalhes técnicos de forma clara
+- Documentar decisões de design
+- Incluir exemplos práticos quando relevante
+
+## Boas Práticas
+- Verificar bibliotecas existentes antes de adicionar novas
+- Considerar variáveis de ambiente em diferentes contextos
+- Fornecer análise crítica de possíveis melhorias
+- Documentar trade-offs e decisões importantes
+
+## Exemplos de Aplicação
+- Usar '// ... existing code ...' para código não alterado
+- Incluir comentários explicativos em mudanças complexas
+- Documentar dependências e requisitos
+- Fornecer exemplos de uso quando apropriado

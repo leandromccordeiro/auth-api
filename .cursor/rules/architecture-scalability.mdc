@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Arquitetura e Escalabilidade
+
+## Princípios de Design
+- Dividir arquivos longos em arquivos menores
+- Dividir funções longas em funções menores
+- Manter arquivos com no máximo 200-300 linhas
+- Evitar duplicação de código
+- Preferir soluções simples e diretas
+
+## Análise de Código
+- Após cada alteração, refletir sobre:
+  - Escalabilidade da solução
+  - Manutenibilidade do código
+  - Possíveis melhorias futuras
+  - Impacto em diferentes ambientes
+
+## Boas Práticas
+- Verificar código existente antes de implementar novas funcionalidades
+- Manter consistência com padrões existentes
+- Documentar decisões de arquitetura importantes
+- Considerar diferentes ambientes (dev, test, prod)
+
+## Exemplos de Aplicação
+- Refatorar quando arquivos ultrapassarem 300 linhas
+- Dividir funções complexas em funções menores
+- Reutilizar código existente quando possível
+- Manter documentação atualizada

@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Estilo de Código
+
+## Princípios Fundamentais
+- Priorizar soluções simples e diretas
+- Evitar padrões complexos desnecessários
+- Manter consistência com convenções existentes
+- Eliminar duplicação de código
+
+## Boas Práticas
+- Verificar funcionalidades existentes antes de implementar novas
+- Seguir o estilo de código já estabelecido no projeto
+- Manter o código limpo e legível
+- Documentar decisões de design importantes
+
+## Exemplos de Aplicação
+- Reutilizar código existente quando possível
+- Manter consistência na nomenclatura
+- Seguir padrões de formatação do projeto
+- Evitar complexidade desnecessária

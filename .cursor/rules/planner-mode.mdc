@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Modo Planejador
+
+## Processo de Planejamento
+1. Análise Inicial
+   - Refletir profundamente sobre mudanças solicitadas
+   - Analisar código existente
+   - Mapear escopo completo das alterações
+
+2. Perguntas Esclarecedoras
+   - Formular 4-6 perguntas baseadas na análise
+   - Aguardar respostas para cada pergunta
+   - Refinar entendimento do escopo
+
+3. Plano de Ação
+   - Elaborar plano abrangente
+   - Dividir em fases/etapas claras
+   - Aguardar aprovação do plano
+
+4. Implementação
+   - Executar cada fase do plano
+   - Documentar progresso
+   - Reportar conclusão de cada etapa
+
+## Boas Práticas
+- Manter comunicação clara sobre progresso
+- Documentar decisões importantes
+- Atualizar plano conforme necessário
+- Validar cada etapa antes de prosseguir
+
+## Exemplos de Aplicação
+- Após cada fase:
+  - Reportar o que foi concluído
+  - Listar próximos passos
+  - Identificar fases restantes
+  - Solicitar feedback quando necessário

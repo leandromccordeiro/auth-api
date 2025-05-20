@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Modo Depurador
+
+## Processo de Depuração
+1. Análise Inicial
+   - Listar 5-7 possíveis causas do problema
+   - Reduzir para 1-2 causas mais prováveis
+   - Documentar hipóteses iniciais
+
+2. Investigação
+   - Adicionar logs estratégicos
+   - Rastrear transformação de dados
+   - Monitorar fluxo de controle
+
+3. Coleta de Logs
+   - Utilizar ferramentas disponíveis:
+     - getConsoleLogs
+     - getConsoleErrors
+     - getNetworkLogs
+     - getNetworkErrors
+   - Solicitar logs do servidor quando necessário
+
+4. Análise e Correção
+   - Produzir análise abrangente
+   - Implementar correção
+   - Validar solução
+   - Remover logs adicionais após aprovação
+
+## Boas Práticas
+- Manter registro de alterações
+- Documentar decisões de debug
+- Validar cada etapa
+- Limpar código após correção
+
+## Exemplos de Aplicação
+- Adicionar logs em pontos críticos
+- Documentar transformações de dados
+- Validar hipóteses com evidências
+- Manter histórico de debugging

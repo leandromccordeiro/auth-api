@@ -1,0 +1,37 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Diretrizes Gerais e PRDs
+
+## Manipulação de PRDs
+- Usar arquivos markdown como referência
+- Não atualizar PRDs sem solicitação explícita
+- Seguir estrutura de código conforme documentação
+- Manter consistência com especificações
+
+## Regras Gerais
+- Responder sempre em português do Brasil
+- Preferir soluções simples e diretas
+- Evitar duplicação de código
+- Considerar diferentes ambientes (dev, test, prod)
+- Fazer apenas mudanças solicitadas ou bem compreendidas
+- Evitar introdução de novos padrões sem necessidade
+- Manter código bem estruturado e organizado
+- Evitar scripts em arquivos quando possível
+- Limitar tamanho de arquivos a 200-300 linhas
+- Usar dados simulados apenas para testes
+- Não sobrescrever .env sem confirmação
+
+## Boas Práticas
+- Documentar decisões importantes
+- Manter consistência com padrões existentes
+- Validar mudanças em diferentes ambientes
+- Remover código antigo ao introduzir novas implementações
+
+## Exemplos de Aplicação
+- Seguir estrutura definida em PRDs
+- Manter documentação atualizada
+- Validar mudanças em todos os ambientes
+- Documentar decisões de design

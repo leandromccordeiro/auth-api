@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AuthRequest;
+use App\Http\Resources\AuthResource;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,12 +12,8 @@ use Laravel\Sanctum\PersonalAccessToken;
 
 class AuthController extends Controller
 {
-    function register(Request $request) {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
-        ]);
+    function register(AuthRequest $authRequest) {
+        $validated = $authRequest->validated();
 
         $user = User::create([
             'name' => $validated['name'],
@@ -25,11 +23,7 @@ class AuthController extends Controller
 
         $token = $user->createToken('api-token', ['post:read', 'post:create'])->plainTextToken;
 
-        return response()->json([
-            'ok' => true,
-            'user' => $user,
-            'token' => $token
-        ], 200);
+        return AuthResource::make($user)->additional(['token' => $token]);
     }
 
     function login(Request $request) {

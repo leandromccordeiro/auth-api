@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Compreensão do Código Existente
+
+## Análise Inicial
+- Antes de propor soluções, é necessário analisar e compreender o código existente
+- Explicar o funcionamento atual demonstra entendimento da estrutura
+- Identificar a causa raiz dos problemas antes de sugerir soluções
+- Focar em diagnósticos precisos e fundamentados
+
+## Boas Práticas
+- Realizar análise detalhada do código antes de propor mudanças
+- Documentar o entendimento da estrutura atual
+- Identificar padrões e convenções existentes
+- Considerar o contexto histórico do código
+
+## Exemplos de Aplicação
+- Ao receber uma solicitação de ajuda, primeiro analisar o código relevante
+- Explicar o fluxo de execução atual
+- Identificar pontos de atenção e possíveis melhorias
+- Propor soluções baseadas em entendimento profundo do código

@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Segurança e Boas Práticas
+
+## Princípios de Segurança
+- Priorizar segurança em implementações com autenticação
+- Explicar implicações de segurança de cada decisão
+- Considerar aspectos de escalabilidade
+- Implementar validações adequadas
+
+## Boas Práticas
+- Documentar decisões de segurança
+- Implementar validações em múltiplas camadas
+- Considerar diferentes cenários de ataque
+- Manter dependências atualizadas
+
+## Exemplos de Aplicação
+- Validar inputs em todas as camadas
+- Implementar rate limiting quando necessário
+- Usar práticas seguras de autenticação
+- Documentar vulnerabilidades conhecidas
