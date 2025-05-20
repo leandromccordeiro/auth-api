@@ -7,6 +7,13 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class AuthResource extends JsonResource
 {
+    private string $token;
+
+    public function withToken(string $token): static
+    {
+        $this->token = $token;
+        return $this;
+    }
     /**
      * Transform the resource into an array.
      *
@@ -16,7 +23,8 @@ class AuthResource extends JsonResource
     {
         return [
             'ok' => true,
-            'user' => $this->resource
+            'user' => $this->resource,
+            'token' => $this->token
         ];
     }
 }

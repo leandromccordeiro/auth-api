@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\AuthRequest;
 use App\Http\Resources\AuthResource;
 use App\Models\User;
+use App\Repositories\Contracts\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -12,18 +13,16 @@ use Laravel\Sanctum\PersonalAccessToken;
 
 class AuthController extends Controller
 {
+    public function __construct(private UserRepositoryInterface $userRepository) {}
+    
     function register(AuthRequest $authRequest) {
         $validated = $authRequest->validated();
 
-        $user = User::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'password' => Hash::make($validated['password']),
-        ]);
+        $user = $this->userRepository->create($validated);
 
         $token = $user->createToken('api-token', ['post:read', 'post:create'])->plainTextToken;
 
-        return AuthResource::make($user)->additional(['token' => $token]);
+        return AuthResource::make($user)->withToken($token);
     }
 
     function login(Request $request) {
